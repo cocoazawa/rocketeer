@@ -21,13 +21,12 @@ int main() {
         glfwMakeContextCurrent(window);
     }
 
+
     while (!glfwWindowShouldClose(window)) {
         printf("Alert: Closing window...");
 
         glfwSwapBuffers(window);
         glfwPollEvents();
-
-        glDrawPixels(100, 100, GL_RGB, )
     }
 
     glfwTerminate();
