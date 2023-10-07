@@ -69,31 +69,29 @@ include CMakeFiles/RocketeerDX.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/RocketeerDX.dir/flags.make
 
-CMakeFiles/RocketeerDX.dir/main.cpp.o: CMakeFiles/RocketeerDX.dir/flags.make
-CMakeFiles/RocketeerDX.dir/main.cpp.o: main.cpp
-CMakeFiles/RocketeerDX.dir/main.cpp.o: CMakeFiles/RocketeerDX.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/pwg7/DatabaseB/home/engineeringFiles/rocketeer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/RocketeerDX.dir/main.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RocketeerDX.dir/main.cpp.o -MF CMakeFiles/RocketeerDX.dir/main.cpp.o.d -o CMakeFiles/RocketeerDX.dir/main.cpp.o -c /Users/pwg7/DatabaseB/home/engineeringFiles/rocketeer/main.cpp
+CMakeFiles/RocketeerDX.dir/src/main.cpp.o: CMakeFiles/RocketeerDX.dir/flags.make
+CMakeFiles/RocketeerDX.dir/src/main.cpp.o: src/main.cpp
+CMakeFiles/RocketeerDX.dir/src/main.cpp.o: CMakeFiles/RocketeerDX.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/pwg7/DatabaseB/home/engineeringFiles/rocketeer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/RocketeerDX.dir/src/main.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RocketeerDX.dir/src/main.cpp.o -MF CMakeFiles/RocketeerDX.dir/src/main.cpp.o.d -o CMakeFiles/RocketeerDX.dir/src/main.cpp.o -c /Users/pwg7/DatabaseB/home/engineeringFiles/rocketeer/src/main.cpp
 
-CMakeFiles/RocketeerDX.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/RocketeerDX.dir/main.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/pwg7/DatabaseB/home/engineeringFiles/rocketeer/main.cpp > CMakeFiles/RocketeerDX.dir/main.cpp.i
+CMakeFiles/RocketeerDX.dir/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/RocketeerDX.dir/src/main.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/pwg7/DatabaseB/home/engineeringFiles/rocketeer/src/main.cpp > CMakeFiles/RocketeerDX.dir/src/main.cpp.i
 
-CMakeFiles/RocketeerDX.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/RocketeerDX.dir/main.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/pwg7/DatabaseB/home/engineeringFiles/rocketeer/main.cpp -o CMakeFiles/RocketeerDX.dir/main.cpp.s
+CMakeFiles/RocketeerDX.dir/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/RocketeerDX.dir/src/main.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/pwg7/DatabaseB/home/engineeringFiles/rocketeer/src/main.cpp -o CMakeFiles/RocketeerDX.dir/src/main.cpp.s
 
 # Object files for target RocketeerDX
 RocketeerDX_OBJECTS = \
-"CMakeFiles/RocketeerDX.dir/main.cpp.o"
+"CMakeFiles/RocketeerDX.dir/src/main.cpp.o"
 
 # External object files for target RocketeerDX
 RocketeerDX_EXTERNAL_OBJECTS =
 
-RocketeerDX: CMakeFiles/RocketeerDX.dir/main.cpp.o
+RocketeerDX: CMakeFiles/RocketeerDX.dir/src/main.cpp.o
 RocketeerDX: CMakeFiles/RocketeerDX.dir/build.make
-RocketeerDX: glfw-d973acc123826666ecc9e6fd475682e3d84c54a6/src/libglfw3.a
-RocketeerDX: /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/System/Library/Frameworks/OpenGL.framework/OpenGL.tbd
 RocketeerDX: CMakeFiles/RocketeerDX.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/pwg7/DatabaseB/home/engineeringFiles/rocketeer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable RocketeerDX"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/RocketeerDX.dir/link.txt --verbose=$(VERBOSE)

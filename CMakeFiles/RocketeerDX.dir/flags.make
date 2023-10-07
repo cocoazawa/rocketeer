@@ -4,7 +4,7 @@
 # compile CXX with /Library/Developer/CommandLineTools/usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/pwg7/DatabaseB/home/engineeringFiles/rocketeer/glfw-d973acc123826666ecc9e6fd475682e3d84c54a6/include -F/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/System/Library/Frameworks
+CXX_INCLUDES = 
 
 CXX_FLAGS =  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk
 
