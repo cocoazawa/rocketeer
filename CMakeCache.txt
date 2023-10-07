@@ -282,13 +282,10 @@ CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 //Value Computed by CMake
 GLFW_BINARY_DIR:STATIC=/Users/pwg7/DatabaseB/home/engineeringFiles/rocketeer/glfw-d973acc123826666ecc9e6fd475682e3d84c54a6
 
-//Build the GLFW documentation
 GLFW_BUILD_DOCS:BOOL=OFF
 
-//Build the GLFW example programs
 GLFW_BUILD_EXAMPLES:BOOL=OFF
 
-//Build the GLFW test programs
 GLFW_BUILD_TESTS:BOOL=OFF
 
 //Generate installation target
@@ -460,7 +457,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=3
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
