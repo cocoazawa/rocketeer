@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/RocketeerDX.dir/src/main.cpp.o"
-  "CMakeFiles/RocketeerDX.dir/src/main.cpp.o.d"
+  "CMakeFiles/RocketeerDX.dir/main.cpp.o"
+  "CMakeFiles/RocketeerDX.dir/main.cpp.o.d"
   "RocketeerDX"
   "RocketeerDX.pdb"
 )
