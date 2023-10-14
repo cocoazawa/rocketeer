@@ -1,1 +1,0 @@
-/Library/Developer/CommandLineTools/usr/bin/c++  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/RocketeerDX.dir/src/main.cpp.o -o RocketeerDX  -Wl,-rpath,/usr/local/lib /usr/local/lib/libglfw.3.3.dylib /usr/local/lib/libvulkan.1.dylib /usr/local/lib/libvulkan.1.3.261.dylib 
