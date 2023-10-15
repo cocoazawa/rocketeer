@@ -45,8 +45,9 @@ class rocketeerApp {
         }
 
         void cleanup() {
-            glfwDestroyWindow(window);
+            vkDestroyInstance(instance, nullptr);
 
+            glfwDestroyWindow(window);
             glfwTerminate();
         }
 
@@ -59,15 +60,15 @@ class rocketeerApp {
             appInfo.engineVersion = VK_MAKE_VERSION(1, 0, 0);
             appInfo.apiVersion = VK_API_VERSION_1_0;
 
-            VkInstanceCreateInfo createInfo{};
+            VkInstanceCreateInfo createInfo{};  // Instance create information
             createInfo.sType = VK_STRUCTURE_TYPE_INSTANCE_CREATE_INFO;
             createInfo.pApplicationInfo = &appInfo;
             
 
-            uint32_t glfwExtensionCount = 0;
+            uint32_t glfwExtensionCount = 0;  // Extensions 
             const char** glfwExtensions;
             
-            glfwExtensions = glfwGetRequiredInstanceExtensions(&glfwExtensionCount);
+            glfwExtensions = glfwGetRequiredInstanceExtensions(&glfwExtensionCount);  // NOW they are "required" 
 
             std::vector<const char*> requiredExtensions;
 
@@ -84,9 +85,8 @@ class rocketeerApp {
             createInfo.enabledLayerCount = 0;
 
             VkResult result = vkCreateInstance(&createInfo, nullptr, &instance);
-            // https://registry.khronos.org/vulkan/specs/1.3-extensions/man/html/VkResult.html
             if (vkCreateInstance(&createInfo, nullptr, &instance) != VK_SUCCESS) {
-                std::cout << "Error Code/" << result << "\n";
+                std::cout << "Error Code/" << result << "\n";  // Throws an error if the instance failed to create. In the future, the app should display an error dialogue on the screen before quitting.
                 throw std::runtime_error("Error/Failed to create instance.");
             }
         }
